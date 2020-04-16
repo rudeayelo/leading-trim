@@ -1,0 +1,38 @@
+{
+  "name": "leading-trim",
+  "version": "0.1.0",
+  "author": "Rude",
+  "main": "dist/index.js",
+  "module": "dist/leading-trim.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "devDependencies": {
+    "husky": "4.2.5",
+    "tsdx": "0.13.2",
+    "tslib": "1.11.1",
+    "typescript": "3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "proseWrap": "always"
+  }
+}

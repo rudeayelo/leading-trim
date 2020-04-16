@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`outputs styles correctly 1`] = `
+Object {
+  "&::after": Object {
+    "marginTop": "calc(-0.37499999999999994em - 1px + -1px)",
+  },
+  "&::before": Object {
+    "marginBottom": "calc(-0.37499999999999994em - 1px + 1px)",
+  },
+  "&::before, &::after": Object {
+    "content": "\\"\\"",
+    "display": "block",
+    "height": 0,
+    "paddingTop": "1px",
+    "width": 0,
+  },
+  "display": "block",
+  "lineHeight": 1.5,
+}
+`;
