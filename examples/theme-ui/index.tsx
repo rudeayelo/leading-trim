@@ -78,7 +78,7 @@ const App = () => (
       Using{" "}
       <a
         href="https://fonts.google.com/specimen/Inter"
-        rel="nofollow"
+        rel="noopener noreferrer"
         target="_blank"
       >
         Inter from Google Fonts

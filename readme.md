@@ -1,18 +1,20 @@
 <div align="center">
   <img src="public/leading-trim.png" alt="leading-trim" title="leading-trim" width="656">
-
   <br/>
   <br/>
-
   <p>
     Strip out spacing above and below the first and last lines of a text block
   </p>
-
   <a href="https://www.npmjs.com/package/leading-trim">
     <img src="https://img.shields.io/npm/v/leading-trim.svg" alt="leading-trim on npm" />
   </a>
   <img src="https://github.com/rudeayelo/leading-trim/workflows/CI/badge.svg" alt="leading-trim on npm" />
-
+  <br />
+  <br />
+  <a href="#usage">Usage</a> &nbsp; · &nbsp;
+  <a href="./examples">Examples</a> &nbsp; · &nbsp;
+  <a href="#faq">FAQ</a> &nbsp; · &nbsp;
+  <a href="https://codesandbox.io/s/leading-trim-playground-rwnmp">CodeSandbox</a>
   <br />
   <br />
 </div>
