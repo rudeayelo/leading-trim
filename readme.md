@@ -78,12 +78,13 @@ leadingTrim({
 
 Use them when you're setting your `font-family` to a typical system font stack:
 
+<!-- prettier-ignore-start -->
 ```css
 body: {
-  fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 ```
+<!-- prettier-ignore-end -->
 
 The `reference` numbers are already set for this one so you don't have to.
 Naturally different operative systems will use different fonts, so it's a close
@@ -107,12 +108,13 @@ systemFontLeadingTrim({
 
 Same as above but for a monospace `font-family` stack:
 
+<!-- prettier-ignore-start -->
 ```css
 body: {
-  fontfamily: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
+  fontfamily: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 ```
+<!-- prettier-ignore-end -->
 
 <!-- prettier-ignore-start -->
 ```jsx
