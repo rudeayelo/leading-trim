@@ -142,6 +142,8 @@ library of your choice:
 
 ```json
 {
+  "display": "block",
+  "lineHeight": 1.5,
   "&::after": {
     "marginTop": "calc(-0.375em - 1px + -1px)",
   },
@@ -154,11 +156,13 @@ library of your choice:
     "height": 0,
     "paddingTop": "1px",
     "width": 0,
-  },
-  "display": "block",
-  "lineHeight": 1.5,
+  }
 }
 ```
+
+The code above will work with **any font size** automatically so it's up to you
+if you want to provide it along or just let the element inherit the one from the
+parent element.
 
 Check the [examples](./examples) for a more realistic usage.
 
