@@ -1,7 +1,19 @@
 {
   "name": "leading-trim",
+  "description": "Strip out spacing above and below the first and last lines of a text block",
   "version": "1.0.0",
-  "author": "Rude",
+  "license": "MIT",
+  "author": {
+    "name": "Rude Ayelo",
+    "email": "me@rude.works"
+  },
+  "keywords": [
+    "line-height",
+    "basekick",
+    "leading-trim",
+    "css-in-js"
+  ],
+  "repository": "rudeayelo/leading-trim",
   "main": "dist/index.js",
   "module": "dist/leading-trim.esm.js",
   "typings": "dist/index.d.ts",
@@ -9,7 +21,6 @@
     "dist",
     "src"
   ],
-  "license": "MIT",
   "engines": {
     "node": ">=10"
   },
@@ -20,12 +31,6 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build"
   },
-  "devDependencies": {
-    "husky": "4.2.5",
-    "tsdx": "0.13.2",
-    "tslib": "1.11.1",
-    "typescript": "3.8.3"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -34,5 +39,11 @@
   "prettier": {
     "trailingComma": "all",
     "proseWrap": "always"
+  },
+  "devDependencies": {
+    "husky": "4.2.5",
+    "tsdx": "0.13.2",
+    "tslib": "1.11.1",
+    "typescript": "3.8.3"
   }
 }

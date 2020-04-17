@@ -26,7 +26,7 @@ value. The effect of that extra space may be overlooked or worked around, but
 when working with precise scales and layout components, there's probably no room
 for random spacing going around your text.
 
-<img src="./public/leading-trim-comparison.gif" alt="leading-trim behaviour comparison" />
+<img src="./public/leading-trim-comparison.gif" alt="leading-trim behaviour comparison" width="500" />
 
 `leading-trim` is a JavaScript port of **EightShapes**'s
 [Text Crop mixin](http://text-crop.eightshapes.com/)
