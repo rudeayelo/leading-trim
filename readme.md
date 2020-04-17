@@ -8,7 +8,9 @@
   <a href="https://www.npmjs.com/package/leading-trim">
     <img src="https://img.shields.io/npm/v/leading-trim.svg" alt="leading-trim on npm" />
   </a>
-  <img src="https://github.com/rudeayelo/leading-trim/workflows/CI/badge.svg" alt="leading-trim on npm" />
+  <a href="https://github.com/rudeayelo/leading-trim/actions?query=workflow%3ACI">
+    <img src="https://github.com/rudeayelo/leading-trim/workflows/CI/badge.svg" alt="leading-trim CI status" />
+  </a>
   <br />
   <br />
   <a href="#usage">Usage</a> &nbsp; · &nbsp;
