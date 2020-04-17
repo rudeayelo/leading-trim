@@ -173,8 +173,8 @@ based on that, feel free to PR some other examples using other libraries.</sup>
 
 1. Use the **EightShapes**'s
    [Text Crop mixin tool](http://text-crop.eightshapes.com/) to obtain the
-   [`reference`](#reference) numbers (I got the best results using a line height
-   of `1` and a `> 32px` font size)
+   `reference` numbers (I got the best results using a line height of `1` and a
+   `> 32px` font size)
 2. Pass your `lineHeight` and the `reference` numbers from the previous step to
    the `leadingTrim` function
 3. Inject the styles object that the function outputs using your prefered
