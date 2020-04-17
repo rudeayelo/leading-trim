@@ -36,7 +36,7 @@ const textSizes = {
   },
 };
 
-const getLeadnigTrimCSS = size =>
+const getLeadingTrimCSS = size =>
   systemFontLeadingTrim({
     lineHeight: textSizes[size].lineHeight,
     correction: {
@@ -47,7 +47,7 @@ const getLeadnigTrimCSS = size =>
 
 const Text = props => {
   const className = useCss({
-    ...getLeadnigTrimCSS(props.size),
+    ...getLeadingTrimCSS(props.size),
     fontSize: textSizes[props.size].fontSize,
     backgroundColor: "#A1C5E9",
   });

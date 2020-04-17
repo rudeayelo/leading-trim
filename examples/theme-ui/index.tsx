@@ -42,7 +42,7 @@ const textSizes = {
   },
 };
 
-const getLeadnigTrimCSS = size =>
+const getLeadingTrimCSS = size =>
   leadingTrim({
     lineHeight: textSizes[size].lineHeight,
     reference,
@@ -55,7 +55,7 @@ const getLeadnigTrimCSS = size =>
 const Text = props => (
   <span
     sx={{
-      ...getLeadnigTrimCSS(props.size),
+      ...getLeadingTrimCSS(props.size),
       fontSize: textSizes[props.size].fontSize,
       backgroundColor: "#A1C5E9",
     }}
