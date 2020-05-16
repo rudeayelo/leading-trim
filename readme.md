@@ -30,13 +30,13 @@ value. The effect of that extra space may be overlooked or worked around, but
 when working with precise scales and layout components, there's probably no room
 for random spacing going around your text.
 
-<img src="./public/leading-trim-comparison.gif" alt="leading-trim behaviour comparison" width="500" />
-
 `leading-trim` is a JavaScript port of **EightShapes**'s
 [Text Crop mixin](http://text-crop.eightshapes.com/)
 ([source](https://github.com/EightShapes/esds-text-crop)). It returns a _CSS
 styles object_ ready to be used with any CSS-in-JS library that let's you inject
 styles with nested pseudo-elements.
+
+<img src="./public/leading-trim-comparison.gif" alt="leading-trim behaviour comparison" width="500" />
 
 ## Install
 
@@ -171,6 +171,8 @@ based on that, feel free to PR some other examples using other libraries.</sup>
 
 ### tl;dr
 
+#### Using a custom font
+
 1. Use the **EightShapes**'s
    [Text Crop mixin tool](http://text-crop.eightshapes.com/) to obtain the
    `reference` numbers (I got the best results using a line height of `1` and a
@@ -179,6 +181,12 @@ based on that, feel free to PR some other examples using other libraries.</sup>
    the `leadingTrim` function
 3. Inject the styles object that the function outputs using your prefered
    CSS-in-JS library
+
+#### Using a system font
+
+Pass your `lineHeight` to the [`systemFontLeadingTrim`](#systemfontleadingtrim)
+function and inject the styles object that the function outputs using your
+prefered CSS-in-JS library.
 
 ## FAQ
 
@@ -205,6 +213,7 @@ issue:
 - [Line-height Crop - a simple CSS formula to remove top space from your text](https://codyhouse.co/blog/post/line-height-crop)
 - [**EightShapes**'s Text Crop mixin intro article](https://medium.com/eightshapes-llc/cropping-away-negative-impacts-of-line-height-84d744e016ce)
 - [Getting to the bottom of line height in Figma](https://www.figma.com/blog/line-height-changes/)
+- [How to Tame Line Height in CSS](https://css-tricks.com/how-to-tame-line-height-in-css/)
 
 ### Where did I hear this name before?
 
