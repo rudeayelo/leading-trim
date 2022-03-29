@@ -41,7 +41,7 @@
     "proseWrap": "always"
   },
   "devDependencies": {
-    "husky": "4.2.5",
+    "husky": "4.3.8",
     "tsdx": "0.13.3",
     "tslib": "1.11.2",
     "typescript": "3.8.3"
