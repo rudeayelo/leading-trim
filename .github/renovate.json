@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "labels": [
+    "Dependencies"
+  ],
+  "separateMinorPatch": true,
+  "patch": {
+    "automerge": true
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "stabilityDays": 3
+    }
+  ],
+  "prCreation": "not-pending",
+  "timezone": "Europe/Madrid",
+  "schedule": [
+    "after 10pm every weekday",
+    "before 5am every weekday"
+  ]
+}
