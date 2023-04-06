@@ -1,4 +1,4 @@
-import { leadingTrim } from "../src";
+import { leadingTrim } from ".";
 
 it("outputs styles correctly", () => {
   const leadingTrimCSS = leadingTrim({
