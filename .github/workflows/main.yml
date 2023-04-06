@@ -1,42 +1,39 @@
 name: CI
 on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Begin CI...
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Use Node 16
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: "16"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
-      - name: Use cached node_modules
+      - name: Cache pnpm modules
         uses: actions/cache@v3
         with:
-          path: node_modules
-          key: nodeModules-${{ hashFiles('**/yarn.lock') }}
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            nodeModules-
+            ${{ runner.os }}-
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-        env:
-          CI: true
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7.x.x
+          run_install: true
 
       - name: Lint
-        run: yarn lint
-        env:
-          CI: true
+        run: pnpm run lint
 
       - name: Test
-        run: yarn test --ci --coverage --maxWorkers=2
-        env:
-          CI: true
+        run: pnpm run test
 
       - name: Build
-        run: yarn build
-        env:
-          CI: true
+        run: pnpm run build
