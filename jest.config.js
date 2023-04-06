@@ -5,8 +5,4 @@ module.exports = {
   moduleNameMapper: {
     "^src/(.*)$": "<rootDir>/src/$1",
   },
-  watchPlugins: [
-    "jest-watch-typeahead/filename",
-    "jest-watch-typeahead/testname",
-  ],
 };
