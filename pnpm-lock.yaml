@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 devDependencies:
   '@types/jest':
-    specifier: 29.5.0
-    version: 29.5.0
+    specifier: 29.5.1
+    version: 29.5.1
   '@typescript-eslint/eslint-plugin':
     specifier: 5.57.1
     version: 5.57.1(@typescript-eslint/parser@5.57.1)(eslint@8.37.0)(typescript@5.0.4)
@@ -989,8 +989,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest@29.5.0:
-    resolution: {integrity: sha512-3Emr5VOl/aoBwnWcH/EFQvlSAmjV+XtV9GGu5mwdYew5vhQh0IUZx/60x0TzHDu09Bi7HMx10t/namdJw5QIcg==}
+  /@types/jest@29.5.1:
+    resolution: {integrity: sha512-tEuVcHrpaixS36w7hpsfLBLpjtMRJUE09/MHXn923LOVojDwyC14cWcfc0rDs0VEfUyYmt/+iX1kxxp+gZMcaQ==}
     dependencies:
       expect: 29.5.0
       pretty-format: 29.5.0
